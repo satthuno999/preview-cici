@@ -1,0 +1,13 @@
+version: "3.8"
+
+services:
+  app-dev:
+    build:
+      context: .
+      args:
+        NODE_ENV: development
+    container_name: cici-app-dev
+    ports:
+      - "8083:8083"
+    environment:
+      - PORT=8083
